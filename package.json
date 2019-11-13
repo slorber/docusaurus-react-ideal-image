@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "typings": "index.d.ts",
   "engines": {
-    "node": "> 4",
+    "node": "> 8",
     "npm": "> 3"
   },
   "scripts": {
@@ -17,7 +17,6 @@
     "test:ts": "tsc --noEmit -p ./tsconfig.json",
     "validate": "npm run test:ts && kcd-scripts validate",
     "setup": "npm install && npm run validate -s",
-    "precommit": "kcd-scripts precommit",
     "styleguide": "styleguidist server",
     "styleguide:build": "styleguidist build",
     "predeploy": "styleguidist build",
@@ -32,27 +31,27 @@
   "peerDependencies": {
     "prop-types": ">=15",
     "react": ">=0.14.x",
-    "react-waypoint": ">=8.0.0"
+    "react-waypoint": ">=9.0.0"
   },
   "devDependencies": {
-    "@types/react": "16.4.18",
-    "babel-loader": "7.1.5",
-    "@babel/plugin-proposal-class-properties": "7.1.0",
-    "@babel/plugin-proposal-object-rest-spread": "7.0.0",
-    "@babel/preset-env": "7.1.0",
-    "@babel/preset-react": "7.0.0",
-    "gh-pages": "2.0.1",
-    "jest-canvas-mock": "1.1.0",
-    "kcd-scripts": "0.45.0",
-    "prop-types": "15.6.2",
-    "react": "16.6.0",
-    "react-dom": "16.6.0",
-    "react-styleguidist": "8.0.2",
-    "react-test-renderer": "16.6.0",
-    "react-testing-library": "5.2.3",
-    "react-waypoint": "8.0.3",
-    "typescript": "3.1.5",
-    "webpack": "4.24.0"
+    "@babel/plugin-proposal-class-properties": "^7.7.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.6.2",
+    "@babel/preset-env": "^7.7.1",
+    "@babel/preset-react": "^7.7.0",
+    "@types/react": "16.9.11",
+    "babel-loader": "^8.0.6",
+    "gh-pages": "^2.1.1",
+    "jest-canvas-mock": "^2.2.0",
+    "kcd-scripts": "^1.11.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "react-styleguidist": "10.2.0",
+    "react-test-renderer": "16.11.0",
+    "react-testing-library": "8.0.1",
+    "react-waypoint": "^9.0.1",
+    "typescript": "^3.7.2",
+    "webpack": "^4.41.2"
   },
   "eslintConfig": {
     "extends": "./node_modules/kcd-scripts/eslint.js",
