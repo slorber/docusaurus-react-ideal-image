@@ -1,11 +1,11 @@
 {
   "name": "@endiliey/react-ideal-image",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Adaptive image component",
   "main": "dist/index.js",
   "typings": "index.d.ts",
   "engines": {
-    "node": "> 8",
+    "node": ">= 8.9.0",
     "npm": "> 3"
   },
   "scripts": {
