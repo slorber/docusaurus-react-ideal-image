@@ -1,6 +1,6 @@
 {
   "name": "@endiliey/react-ideal-image",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Adaptive image component",
   "main": "dist/index.js",
   "typings": "index.d.ts",
@@ -76,5 +76,17 @@
   "bugs": {
     "url": "https://github.com/endiliey/react-ideal-image/issues"
   },
-  "homepage": "https://github.com/endiliey/react-ideal-image#readme"
+  "homepage": "https://github.com/endiliey/react-ideal-image#readme",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }
