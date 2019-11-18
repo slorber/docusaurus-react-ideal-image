@@ -129,7 +129,7 @@ export default class IdealImage extends Component {
         width: PropTypes.number.isRequired,
         src: PropTypes.string,
         size: PropTypes.number,
-        format: PropTypes.oneOf(['jpeg', 'webp']),
+        format: PropTypes.oneOf(['jpeg', 'jpg', 'webp', 'png', 'gif']),
       }),
     ).isRequired,
     /** function which decides if image should be downloaded */
