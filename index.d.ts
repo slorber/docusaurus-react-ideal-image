@@ -14,7 +14,7 @@ export interface SrcType {
   width: number
   src?: string
   size?: number
-  format?: 'webp' | 'jpeg'
+  format?: 'webp' | 'jpeg' | 'png' | 'gif' | 'jpeg'
 }
 
 type ThemeKey = 'placeholder' | 'img' | 'icon' | 'noscript'
