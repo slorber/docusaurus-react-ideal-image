@@ -1,9 +1,12 @@
 {
-  "name": "@endiliey/react-ideal-image",
+  "name": "@slorber/react-ideal-image",
   "version": "0.0.11",
   "description": "Adaptive image component",
   "main": "dist/index.js",
   "typings": "index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
   "engines": {
     "node": ">= 8.9.0",
     "npm": "> 3"
@@ -71,12 +74,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/endiliey/react-ideal-image.git"
+    "url": "https://github.com/slorber/docusaurus-react-ideal-image.git"
   },
   "bugs": {
-    "url": "https://github.com/endiliey/react-ideal-image/issues"
+    "url": "https://github.com/slorber/docusaurus-react-ideal-image/issues"
   },
-  "homepage": "https://github.com/endiliey/react-ideal-image#readme",
+  "homepage": "https://github.com/slorber/docusaurus-react-ideal-image#readme",
   "browserslist": {
     "production": [
       ">0.2%",

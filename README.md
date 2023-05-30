@@ -20,6 +20,14 @@
 [![Star on GitHub][github-star-badge]][github-star]
 [![Tweet][twitter-badge]][twitter]
 
+## FOR DOCUSAURUS USERS / MAINTAINERS
+
+This is a fork of an already existing [unmaintained](https://docusaurus.io/blog/2020/01/07/tribute-to-endi) [fork](https://github.com/endiliey/react-ideal-image)...
+
+At some point we'll want to cleanup this and use our own IdealImage component maintained on the Docusaurus repo or org.
+
+This new fork was created mainly to solve the hydration errors after upgrading to React 18
+
 ## The problem
 
 I need React component to asynchronously load images, which will adapt based on network, which will allow a user to control, which image to load.
