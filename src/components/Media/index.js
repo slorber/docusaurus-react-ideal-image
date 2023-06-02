@@ -63,7 +63,14 @@ export default class Media extends PureComponent {
     iconSize: 64,
   }
 
+  constructor(props) {
+    super(props);
+    this.state = { isMounted: false };
+  }
+
   componentDidMount() {
+    this.setState({isMounted: true});
+
     if (this.props.onDimensions && this.dimensionElement)
       /* Firefox returns 0 for both clientWidth and clientHeight.
       To fix this we can check the parentNode's clientWidth and clientHeight as a fallback. */
@@ -112,7 +119,8 @@ export default class Media extends PureComponent {
   }
 
   renderNoscript(props) {
-    return props.ssr ? (
+    // render noscript in ssr + hydration to avoid hydration mismatch error
+    return this.state.isMounted ? null : (
       <noscript>
         <img
           {...compose(
@@ -126,7 +134,7 @@ export default class Media extends PureComponent {
           height={props.height}
         />
       </noscript>
-    ) : null
+    )
   }
 
   render() {
