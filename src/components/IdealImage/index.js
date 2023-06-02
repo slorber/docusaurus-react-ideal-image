@@ -320,8 +320,9 @@ export default class IdealImage extends Component {
       ...this.state, // eslint-disable-line react/no-access-state-in-setstate
       size: pickedSrc.size,
     })
-    this.setState({pickedSrc, shouldAutoDownload, url})
-    if (shouldAutoDownload) this.load(false)
+    this.setState({pickedSrc, shouldAutoDownload, url},() => {
+      if (shouldAutoDownload) this.load(false)
+    })
   }
 
   onLeave = () => {
