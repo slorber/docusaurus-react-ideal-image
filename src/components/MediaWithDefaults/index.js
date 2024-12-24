@@ -9,7 +9,4 @@ const MediaWithDefaults = ({
                              ...props
                            }) => <Media {...props} icons={iconsProp} theme={themeProp}/>
 
-// eslint-disable-next-line react/forbid-foreign-prop-types
-MediaWithDefaults.propTypes = Media.propTypes
-
 export default MediaWithDefaults

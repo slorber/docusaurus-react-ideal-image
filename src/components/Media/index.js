@@ -1,62 +1,62 @@
 import React, {PureComponent} from 'react'
-import PropTypes from 'prop-types'
+// import PropTypes from 'prop-types'
 import compose from '../composeStyle'
 import {icons as defaultIcons} from '../constants'
 
 const {load, loading, loaded, error, noicon, offline} = defaultIcons
 
 export default class Media extends PureComponent {
-  static propTypes = {
-    /** URL of the image */
+  /*static propTypes = {
+    /!** URL of the image *!/
     src: PropTypes.string.isRequired,
-    /** Width of the image in px */
+    /!** Width of the image in px *!/
     width: PropTypes.number.isRequired,
-    /** Height of the image in px */
+    /!** Height of the image in px *!/
     height: PropTypes.number.isRequired,
     placeholder: PropTypes.oneOfType([
       PropTypes.shape({
-        /** Solid color placeholder */
+        /!** Solid color placeholder *!/
         color: PropTypes.string.isRequired,
       }),
       PropTypes.shape({
-        /**
+        /!**
          * [Low Quality Image Placeholder](https://github.com/zouhir/lqip)
          * [SVG-Based Image Placeholder](https://github.com/technopagan/sqip)
          * base64 encoded image of low quality
-         */
+         *!/
         lqip: PropTypes.string.isRequired,
       }),
     ]).isRequired,
-    /** display icon */
+    /!** display icon *!/
     icon: PropTypes.oneOf([load, loading, loaded, error, noicon, offline])
       .isRequired,
-    /** Map of icons */
+    /!** Map of icons *!/
     icons: PropTypes.object.isRequired,
-    /** theme object - CSS Modules or React styles */
+    /!** theme object - CSS Modules or React styles *!/
     theme: PropTypes.object.isRequired,
-    /** Alternative text */
+    /!** Alternative text *!/
     alt: PropTypes.string,
-    /** Color of the icon */
+    /!** Color of the icon *!/
     iconColor: PropTypes.string,
-    /** Size of the icon in px */
+    /!** Size of the icon in px *!/
     iconSize: PropTypes.number,
-    /** React's style attribute for root element of the component */
+    /!** React's style attribute for root element of the component *!/
     style: PropTypes.object,
-    /** React's className attribute for root element of the component */
+    /!** React's className attribute for root element of the component *!/
     className: PropTypes.string,
-    /** On click handler */
+    /!** On click handler *!/
     onClick: PropTypes.func,
-    /** callback to get dimensions of the placeholder */
+    /!** callback to get dimensions of the placeholder *!/
     onDimensions: PropTypes.func,
-    /** message to show below the icon */
+    /!** message to show below the icon *!/
     message: PropTypes.node,
-    /** reference for Waypoint */
+    /!** reference for Waypoint *!/
     innerRef: PropTypes.func,
-    /** noscript image src */
+    /!** noscript image src *!/
     nsSrc: PropTypes.string,
-    /** noscript image srcSet */
+    /!** noscript image srcSet *!/
     nsSrcSet: PropTypes.string,
-  }
+  }*/
 
   static defaultProps = {
     iconColor: '#fff',

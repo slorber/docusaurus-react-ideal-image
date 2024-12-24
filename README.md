@@ -28,6 +28,10 @@ At some point we'll want to cleanup this and use our own IdealImage component ma
 
 This new fork was created mainly to solve the hydration errors after upgrading to React 18
 
+December 2024: we also removed usage of FC.defaultProps (for React 19) and propTypes (to remove useless dependency)
+
+---
+
 ## The problem
 
 I need React component to asynchronously load images, which will adapt based on network, which will allow a user to control, which image to load.
@@ -71,7 +75,7 @@ should be installed as one of your project's `dependencies`:
 npm install react-ideal-image --save
 ```
 
-> This package also depends on `react`, `prop-types`, and `react-waypoint`.
+> This package also depends on `react`, `prop-types` (removed), and `react-waypoint`.
 > Please make sure you have those installed as well.
 
 ## Usage

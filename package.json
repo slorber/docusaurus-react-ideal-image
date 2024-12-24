@@ -32,7 +32,6 @@
   "author": "stereobooster <stereobooster@gmail.com>",
   "license": "MIT",
   "peerDependencies": {
-    "prop-types": ">=15",
     "react": ">=0.14.x",
     "react-waypoint": ">=9.0.2"
   },
@@ -46,7 +45,6 @@
     "gh-pages": "^2.1.1",
     "jest-canvas-mock": "^2.2.0",
     "kcd-scripts": "^1.11.0",
-    "prop-types": "^15.7.2",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-styleguidist": "10.2.0",

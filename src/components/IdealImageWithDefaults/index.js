@@ -9,6 +9,4 @@ const IdealImageWithDefaults = ({
   ...props
 }) => <IdealImage {...props} icons={iconsProp} theme={themeProp} />;
 
-IdealImageWithDefaults.propTypes = IdealImage.propTypes
-
 export default IdealImageWithDefaults

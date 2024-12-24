@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import PropTypes from 'prop-types'
+// import PropTypes from 'prop-types'
 import {Waypoint} from 'react-waypoint'
 import Media from '../Media'
 import {icons, loadStates} from '../constants'
@@ -118,12 +118,13 @@ export default class IdealImage extends Component {
     }
   }
 
+/*
   static propTypes = {
-    /** how much to wait in ms until concider download to slow */
+    /!** how much to wait in ms until concider download to slow *!/
     threshold: PropTypes.number,
-    /** function to generate src based on width and format */
+    /!** function to generate src based on width and format *!/
     getUrl: PropTypes.func,
-    /** array of sources */
+    /!** array of sources *!/
     srcSet: PropTypes.arrayOf(
       PropTypes.shape({
         width: PropTypes.number.isRequired,
@@ -132,37 +133,37 @@ export default class IdealImage extends Component {
         format: PropTypes.oneOf(['jpeg', 'jpg', 'webp', 'png', 'gif']),
       }),
     ).isRequired,
-    /** function which decides if image should be downloaded */
+    /!** function which decides if image should be downloaded *!/
     shouldAutoDownload: PropTypes.func,
-    /** function which decides what message to show */
+    /!** function which decides what message to show *!/
     getMessage: PropTypes.func,
-    /** function which decides what icon to show */
+    /!** function which decides what icon to show *!/
     getIcon: PropTypes.func,
-    /** type of loader */
+    /!** type of loader *!/
     loader: PropTypes.oneOf(['image', 'xhr']),
-    /** Width of the image in px */
+    /!** Width of the image in px *!/
     width: PropTypes.number.isRequired,
-    /** Height of the image in px */
+    /!** Height of the image in px *!/
     height: PropTypes.number.isRequired,
     placeholder: PropTypes.oneOfType([
       PropTypes.shape({
-        /** Solid color placeholder */
+        /!** Solid color placeholder *!/
         color: PropTypes.string.isRequired,
       }),
       PropTypes.shape({
-        /**
+        /!**
          * [Low Quality Image Placeholder](https://github.com/zouhir/lqip)
          * [SVG-Based Image Placeholder](https://github.com/technopagan/sqip)
          * base64 encoded image of low quality
-         */
+         *!/
         lqip: PropTypes.string.isRequired,
       }),
     ]).isRequired,
-    /** Map of icons */
+    /!** Map of icons *!/
     icons: PropTypes.object.isRequired,
-    /** theme object - CSS Modules or React styles */
+    /!** theme object - CSS Modules or React styles *!/
     theme: PropTypes.object.isRequired,
-  }
+  }*/
 
   static defaultProps = {
     shouldAutoDownload: defaultShouldAutoDownload,
