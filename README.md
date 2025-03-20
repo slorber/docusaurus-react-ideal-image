@@ -22,6 +22,10 @@
 
 ## FOR DOCUSAURUS USERS / MAINTAINERS
 
+⚠️ This repo is not used anymore. For Docusaurus v3.8, the code has been internalized in https://github.com/facebook/docusaurus/pull/11010.
+
+---
+
 This is a fork of an already existing [unmaintained](https://docusaurus.io/blog/2020/01/07/tribute-to-endi) [fork](https://github.com/endiliey/react-ideal-image)...
 
 At some point we'll want to cleanup this and use our own IdealImage component maintained on the Docusaurus repo or org.
